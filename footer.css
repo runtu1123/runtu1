@@ -1,0 +1,35 @@
+*{margin:0;padding:0;}
+.a1{
+    width:1903px;
+    height:410px;
+    background-color:#262626;
+    
+    
+}
+.a2{
+    border:2px solid #fff;
+    width: 935px;
+    height:303px;
+    color:#FFF;
+    margin-left: 484px;
+    
+
+}
+.a2>div>ul>li>img{
+    width: 30px;
+    height:30px;
+}
+.a3{
+    margin-left: 233px;
+    margin-top: 65px;
+}
+.a4{
+    margin-left: 447px;
+    margin-top: -65px;
+}
+.a5{
+    
+    margin-left: 680px;
+    margin-top: -65px;
+    
+}
