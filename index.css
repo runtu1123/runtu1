@@ -1,0 +1,303 @@
+body,p,h1,h2,h3,h4,h5,h6,ul{padding: 0;margin: 0;}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+img{
+    font-size: 0;
+}
+body{
+    min-width: 1190px;
+}
+/* 头 */
+.header{
+    width: 100%;
+    height: 42px;
+    background: #eb5508;
+    margin: 0 auto;
+    box-shadow: 0px 2px 10px #666;
+}
+.header-left{
+    height: 42px;
+    float: left;
+}
+.header>div>h3,.header>div>h4{
+    float: left;
+    color: #fff;
+}
+.header>div>h3{
+    margin-left:50px;
+    margin-top:10px;
+}
+.header>div>h4{
+    margin-left:15px;
+    border-left: 1px solid #fff;
+    padding-left:15px;
+    margin-top: 15px;
+}
+.header-right{
+    height: 42px;
+    float: right;
+}
+.header-right>ul{
+    height: 42px;
+    display: inline-block;
+    margin-right: 50px;
+}
+.header-right li{
+    margin-top: 12px;
+    line-height: 30px;
+    float: left;
+    padding: 0 15px;
+}
+.header-right li>a{
+    color: #fff;
+    font-size: 14px;
+}
+.header-right  img{
+    float: right;
+    height: 42px;
+}
+/* jio */
+.footer{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+/* 主体 */
+/* 轮播图 */
+.zhuti ul{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.zhuti li{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.zhuti li>img{
+    width: 100%;
+    min-height: 500px;
+    opacity: 0;
+    transition: all .5s linear;
+}
+.zhuti .active{
+    z-index:9;
+    opacity: 1;
+}
+/* 按钮+码 */
+.zhuti-top{
+    width: 100%;
+    height: 100px;
+
+}
+.zhuti-top>div{
+    height:1190px;
+    height: 100px;
+    text-align: center;
+    margin:0 auto;
+}
+.zhuti-top>div>ul{
+    display: inline-block;
+    height: 100px;
+}
+.zhuti-top>div li{
+    height: 100px;
+    float: left;
+    margin-right:100px;
+}
+.zhuti-top>div span{
+    vertical-align: top;
+    display: inline-block;
+    line-height: 100px;
+}
+
+.fenge{
+    margin-bottom: 15px;
+    height: 70px;
+    display: inline-block;
+    border-left: 1px solid #000;
+}
+.erweima{
+    display: inline-block;
+}
+.zhuti-top .erweima>span{
+    width: 116px;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top:35px;
+}
+/* 投送 */
+.content{
+    background: #ececec;
+    padding-bottom: 50px;
+}
+.btn{
+    height: 50px;
+    text-align: center;
+}
+.btn>a{
+    margin-top: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 180px;
+    line-height: 30px;
+    height: 30px;
+    background: #3fadaa;
+    color: #fff;
+}
+/* 框框框 */
+.tabbat{
+    margin: 0 auto;
+    padding: 0  50px;
+    border-radius: 15px;
+    width: 1000px;
+    box-sizing: border-box;
+    border:2px dashed #db965d;
+    color: #777;
+    background: #fff;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.tabbat>ul{
+    width:900px;
+    height: 60px;
+    box-sizing: border-box;
+}
+.tabbat>ul i{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.tabbat>ul li{
+    float: left;
+    text-align: center;
+    width:112.5px ;
+}
+.tabbat .dian>i{
+    background: #f06a00;
+}
+.tabbat .dian>a{
+    color: #f06a00;
+}
+.tabbat li>a{
+    font-size: 14px;
+    color: #777;
+}
+.cs{
+    border-bottom: 1.3px solid #f06a00;
+    margin-bottom: 10px;
+}
+
+/* card */
+/* 滚动条 */
+/* 1.用overflow 然后改样式  滚动条轨道？
+   2.一个竖线加一个圆  (y圆-y线上点)/(y线下点-y线上点)得百分比 
+   对应 左侧card当前展示点相对于整体的坐标百分比？
+ */
+.card{
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.card::-webkit-scrollbar {
+    width: 10px;
+    height: 1px;   
+}
+.card::-webkit-scrollbar-thumb {
+    background: #f06a00;
+    border-radius: 10px;
+}
+.card::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #ccc;
+} 
+
+.card>h3>i{
+    width: 0;
+    height: 0;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    border-top: 10px solid #f06a00;
+    border-left: 10px solid #fff;
+    border-right: 10px solid #fff;
+    display: inline-block;
+}
+.card>h3{
+    color: #f06a00
+}
+.card>ul{
+    margin-left: 35px;
+    margin-right: 80px;
+}
+.card>ul>li{
+    margin: 15px 0;
+    border: 1px solid  #ba7d4b;
+    padding: 10px 20px 10px 20px;
+}
+.card>ul  h4{
+    font-size: 14px;
+}
+.card>ul div p{
+    font-size: 14px;
+}
+.m-bottom{
+    margin-bottom: 20px;
+}
+.card>ul div{
+    position: relative;
+    height: 114px;
+    overflow: hidden;
+    opacity: 1;
+    transition: all .3s linear;
+}
+.card .height-0{
+    height: 0;
+    opacity: 0;
+}
+.card div>a{
+    position: absolute;
+    right: 60px;
+    bottom: 0;
+    width: 120px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #f06a00;
+    border-radius: 5px;
+    color: #f06a00;
+    text-align: center;
+    font-size: 14px;
+}
+.card>ul div span{
+    vertical-align: top;
+}
+.card>ul div a>img{
+    width:20px;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+.kai{
+    width: 25px;
+    height: 20px;
+    float: right;
+    background-image: url(../img/kai.JPG);
+    background-repeat: no-repeat;
+}
+.guan{
+    width: 20px;
+    height: 20px;
+    float: right;
+    background-image: url(../img/guan.JPG);
+    background-repeat: no-repeat;
+}
